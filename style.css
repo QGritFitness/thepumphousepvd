@@ -1,4 +1,7 @@
 /* gym.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
     background-color: black;
     color: white;
@@ -6,7 +9,7 @@ body {
 }
 
 header, footer {
-    background-color: #ff00ff;
+    background-color: #F496B3;
     padding: 1rem;
 }
 
@@ -52,6 +55,55 @@ main {
 .main-content {
     font-size: 1.2rem;
 }
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #222;
+    background-image: url('hero-background.mp4');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    max-width: 60rem;
+    margin-bottom: 4rem;
+  }
+  
+  .hero .btn {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #f1c40f;
+    color: #222;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+  
 
 @media screen and (min-width: 768px) {
     .main-content {
