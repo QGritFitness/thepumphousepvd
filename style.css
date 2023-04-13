@@ -6,11 +6,22 @@ body {
     background-color: black;
     color: white;
     font-family: 'Arial', sans-serif;
+    margin: none;
 }
 
 header, footer {
     background-color: #F496B3;
     padding: 1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -59,7 +70,6 @@ main {
 .hero {
     position: relative;
     height: 100vh;
-    background-color: #222;
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
@@ -79,13 +89,22 @@ main {
     background-size: cover;
     background-position: center center;
     z-index: -1;
+    overflow: hidden;
   }
+
+  video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: linear-gradient(to bottom right, #F496B3, #44B1E0);
+    z-index: 2;
+}
   
   .hero-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
     color: #fff;
