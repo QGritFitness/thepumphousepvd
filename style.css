@@ -60,13 +60,35 @@ main {
     position: relative;
     height: 100vh;
     background-color: #222;
-    background-image: url('hero-background.mp4');
+    background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
   }
   
   .hero h1 {
@@ -75,6 +97,7 @@ main {
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    letter-spacing: .2rem;
     margin-bottom: 2rem;
   }
   
@@ -99,7 +122,7 @@ main {
   }
   
   .hero .btn:hover {
-    background-color: #f1c40f;
+    background-color: #44B1E0;
     color: #222;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
