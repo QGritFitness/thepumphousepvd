@@ -6,7 +6,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Arial', sans-serif;
-    margin: none;
+    margin: 0;
 }
 
 header, footer {
@@ -18,10 +18,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
     padding: 20px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
+    width: 96%;
 }
 
 header h1 {
@@ -36,7 +38,7 @@ header h1 span {
 }
 
 header nav {
-    display: inline;
+    display: flex;
 }
 
 header nav ul {
@@ -80,9 +82,6 @@ main {
   }
 
 .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-image: url('hero-background.jpg');
@@ -90,6 +89,8 @@ main {
     background-position: center center;
     z-index: -1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
   video::before {
@@ -141,7 +142,7 @@ main {
   }
   
   .hero .btn:hover {
-    background-color: #44B1E0;
+    background: linear-gradient(0.4turn, #e601c0, #07bccc);
     color: #222;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
