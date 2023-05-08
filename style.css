@@ -16,47 +16,30 @@ header, footer {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 99vw;
-    padding: 20px;
-    z-index: 999;
+    padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
 }
 
 header img {
-    width: 15vw;
-}
-
-header nav {
-    display: flex;
-}
-
-header nav ul {
-    align-items: center;
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    height: 7vmin;
+    padding: 5px;
 }
 
 header nav ul li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
+    font-size: 1.2rem;
+    color: white;
     text-decoration: underline;
 }
 
 .main-content {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .hero {
@@ -82,28 +65,23 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
   }
-
-  video::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: linear-gradient(to bottom right, #F496B3, #44B1E0);
-    z-index: 2;
-}
   
   .hero-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     z-index: 1;
     text-align: center;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 0 30px 0;
+    width: 70vw;
   }
   
   .hero h1 {
-    font-family: 'Anton', sans-serif;
-    font-size: 6rem;
+    font-family: 'Futura', sans-serif;
+    font-size: 4rem;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -112,34 +90,47 @@ header nav ul li a:hover {
   }
   
   .hero p {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 60rem;
     margin-bottom: 4rem;
   }
   
-  .hero .btn {
-    font-size: 2rem;
+  .hero .btn, button {
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #222;
     background-color: #fff;
     padding: 1.5rem 3rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    width: 35%;
   }
   
-  .btn:hover {
-    background: linear-gradient(0.4turn, #e601c0, #07bccc);
-    color: #222;
+  button:hover, .btn:hover {
+    background: linear-gradient(0.4turn, #f3859b, #44B1E0);
+    color: #fff;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
-  #about-section {
-    background-color: #f8f8f8;
-    padding: 50px 0;
+  .about-section, .juice-bar, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10vw 0px 10vw;
+  }
+
+  .about-section p {
+    margin: 0 5vw 0 5vw;
+    color: #222;
+  }
+
+  .juice-bar p {
+    margin: 0 5vw 15px 5vw;
+    color: #222;
   }
   
   .container {
@@ -150,19 +141,15 @@ header nav ul li a:hover {
   
   h2 {
     font-size: 36px;
-    color: #ff99cc;
+    color: #f3859b;
     margin-bottom: 30px;
   }
   
   p {
     font-size: 18px;
     line-height: 1.5;
-    color: #444;
+    color: #fff;
     margin-bottom: 20px;
-  }
-  
-  p:last-of-type {
-    margin-bottom: 0;
   }
 
   .modal {
@@ -190,11 +177,55 @@ header nav ul li a:hover {
     float: right;
     font-size: 1rem;
   }
-    
-  
 
-@media screen and (min-width: 768px) {
-    .main-content {
-        font-size: 1.4rem;
-    }
-}
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10vw 0px 10vw;
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  footer nav ul li {
+    margin-right: 20px;
+  }
+  
+  footer nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .fa {
+    font-size: 20px;
+  }

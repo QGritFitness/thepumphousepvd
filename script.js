@@ -1,3 +1,5 @@
+
+
 // gym.js
 // document.addEventListener('DOMContentLoaded', () => {
 //    const navLinks = document.querySelectorAll('header nav ul li a');
