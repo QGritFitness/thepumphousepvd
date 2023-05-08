@@ -1,6 +1,10 @@
 /* gym.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+  font-family: 'HotRushSansItalic';
+  src: url('Hot\ Rush\ Sans\ Italic.ttf')  format('truetype');
+}
 
 body {
     background-color: black;
@@ -8,6 +12,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png")
 }
 
 header, footer {
@@ -79,14 +84,27 @@ header nav ul li a:hover {
     width: 70vw;
   }
   
-  .hero h1 {
-    font-family: 'Futura', sans-serif;
+  h3 {
+    font-family: 'HotRushSansItalic';
     font-size: 4rem;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     letter-spacing: .2rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
+  }
+
+  .neonText {
+    color: #222;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f3859b,
+      0 0 82px #f3859b,
+      0 0 92px #f3859b,
+      0 0 102px #f3859b,
+      0 0 151px #f3859b;
   }
   
   .hero p {
@@ -115,22 +133,19 @@ header nav ul li a:hover {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
-  .about-section, .juice-bar, .contact {
+  .about-section, .juice-bar, .memberships, .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 10vw 0px 10vw;
   }
 
   .about-section p {
     margin: 0 5vw 0 5vw;
-    color: #222;
   }
 
   .juice-bar p {
     margin: 0 5vw 15px 5vw;
-    color: #222;
   }
   
   .container {
