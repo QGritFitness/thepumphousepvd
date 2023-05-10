@@ -1,8 +1,34 @@
+/*
+#0B1234
+(11,18,52)
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url("glitch.jpg");
+    background-image: url("https://raw.githubusercontent.com/mburakerman/aestextic/master/background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+*/
+
+body {
+ background-color: #2b1165;
+ background: linear-gradient(
+  180deg,
+  #2b1165 0%,
+  rgba(26, 58, 130, 1) 37%,
+  rgba(171, 36, 177, 1) 69%,
+  #f54171 100%
+ );
+}
+
+.overlay {
+ background-color: transparent;
+ background-size: 5px 5px, 5px 5px;
+ background-position:  -1px -1px, -1px -1px;
+ background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                   linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+ padding-top: 20px;
 }
 
 header, footer {
@@ -65,10 +91,15 @@ header nav ul li a {
     z-index: 1;
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(11, 18, 52, 0.5);
     padding: 0 0 30px 0;
     width: 60vmax;
     max-width: 70vw;
+    max-height: 60vmin;
+  }
+
+  #big-logo{
+    height: 35vmin;
   }
   
   h3 {
@@ -80,7 +111,6 @@ header nav ul li a {
     letter-spacing: .2rem;
     padding-top:10px;
   }
-
 
   .script {
     font-family: 'Chicago';
@@ -142,19 +172,16 @@ header nav ul li a {
     align-items: center;
     text-align: center;
     border-bottom: 20px solid #8b8b8b;
-    background: #c0c0c0;
+    background: #000;
     margin: 3vw 18vw 3vw 18vw;
     border: 2px solid #fffdfc;
+    max-width: 800px;
   }
   
   .container {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-  }
-
-  .values li {
-    list-style-type: none
   }
   
   p {
@@ -163,6 +190,16 @@ header nav ul li a {
     color: #fff;
     margin-bottom: 20px;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10vw 0px 10vw;
   }
 
   .modal {
@@ -189,14 +226,6 @@ header nav ul li a {
   .close-btn {
     float: right;
     font-size: 1rem;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 10vw 0px 10vw;
   }
 
   footer {

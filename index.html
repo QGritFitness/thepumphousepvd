@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Pump Room PVD</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link  rel="stylesheet"  href="https://unpkg.com/98.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
@@ -13,6 +13,7 @@
 
 </head>
 <body>
+	<div class="overlay">	
 	<header class="navbar-fixed-top">
 		
 		<nav class="navbar">
@@ -26,6 +27,7 @@
 	</header>
 	
 	<main>
+
 		<section class="hero">
 			<div class="hero-background">
 				<video autoplay muted loop id="myVideo">
@@ -33,7 +35,7 @@
 				  </video>
 			</div>
 			<div class="hero-content">
-				<img src="Logo.svg" alt="Logo" style="height:35vw;">
+				<img id="big-logo" src="Logo.svg" alt="Logo">
 				<a href="https://www.indiegogo.com/project/preview/2e3a306e" class="btn btn-primary" target="_blank">Join Now</a>
 			</div>
 		</section>
@@ -69,8 +71,11 @@
 				  <button aria-label="Close"></button>
 				</div>
 			  </div>
-			<h3 class="neonText">Owner Bio</h3>
+			<h3 class="neonText">Got your back</h3>
+			<div>
+				<img src="mar.jpeg" alt="">
 				<p>Mar Keller (he/him) is a queer transgender man, NASM Certified Personal Trainer & Corrective Exercise Specialist, and a geek for all things 80s. He started Q GRIT Fitness, a personal training service for the LGBTQ+ community, in Brooklyn, NY in 2019 and is thrilled to be bringing the party up to Providence, RI! Mar has been featured as an instructor on fitness platforms such as Brrrn At Home and in various forms of media spotlighting transgender fitness instructors - most notably, Men’s Health Magazine (Pride issue 2023). As a former pastry chef, bartender, sommelier, and restaurant manager, The Pump Room Gym & Juice Bar is the lovechild of all of Mar’s interests and talents; He can’t wait to share this experience with you! Feel free to check out Q GRIT Fitness’s website here (hyperlink) to get to know him a bit better!</p>
+			</div>
 		</section>
 
 		<section class="section">
@@ -111,6 +116,7 @@
 			  <img src="menu.png">
 			</div>
 		  </div>
+		</div>
     </main>
 
 	<footer>
@@ -130,7 +136,6 @@
 		  </div>
 		</div>
 	  </footer>
-
 </body>
 </html>
 
