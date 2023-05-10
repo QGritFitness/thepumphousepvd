@@ -1,33 +1,28 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
-@font-face {
-  font-family: 'HotRushSansItalic';
-  src: url('Hot\ Rush\ Sans\ Italic.ttf')  format('truetype');
-}
-@font-face {
-  font-family: 'Bayshore';
-  src: url('Bayshore.ttf')  format('truetype');
-}
-
 body {
-    font-family: 'Times New Roman', Times, serif; /*'Proxima Nova', sans-serif;*/
     margin: 0;
     padding: 0;
-    background-image: url("poolside-fm-martini-picnic.png");
+    background-image: url("glitch.jpg");
     background-size: cover;
 }
 
 header, footer {
-    background-color: #000;
-    padding: 1rem;
+    background-color: #8b8b8b;
+    font-family: 'Chicago';
+    margin: 3vw 3vw 0 3vw;
+}
+
+header {    
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 -2px #fffdfc, 0 -4px #ccdbeb;
 }
 
 header img {
-    height: 7vmin;
+    width: 15vw;
     padding: 5px;
 }
 
 header nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
     text-decoration: none;
 }
@@ -38,28 +33,28 @@ header nav ul li a {
 
 .hero {
     position: relative;
-    height: 70vh;
-    width: 100vw;
+    max-height: 70vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 0 0 0;
+    margin: 0 3vw 0 3vw;
     padding: 0 0 0 0;
+    overflow: hidden;
+    border-radius: 0 0 1rem 1rem;
   }
 
 .hero-background {
-    width: 100%;
-    height: 100%;
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
+    width: 110%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+  }
+
+  video {
+    width: 110%;
   }
   
   .hero-content {
@@ -72,7 +67,8 @@ header nav ul li a {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0 0 30px 0;
-    width: 70vw;
+    width: 60vmax;
+    max-width: 70vw;
   }
   
   h3 {
@@ -82,14 +78,13 @@ header nav ul li a {
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     letter-spacing: .2rem;
-    margin: 2rem;
-    padding-top:50px;
-    padding-bottom: 20px;
+    padding-top:10px;
   }
 
+
   .script {
-    font-family: 'Bayshore';
-    font-size: 3em !important;
+    font-family: 'Chicago';
+    font-size: 1.8rem !important;
     color: #fff;
   }
 
@@ -114,7 +109,7 @@ header nav ul li a {
     margin-bottom: 4rem;
   }
   
-  .hero .btn, .btn {
+   .btn {
     font-size: 1.5rem !important;
     font-weight: bold !important;
     text-transform: uppercase;
@@ -123,7 +118,11 @@ header nav ul li a {
     padding: 1rem 2rem !important;
     border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    width: 35% !important;
+    
+  }
+
+  .hero .btn {
+      width: 35% !important;
   }
   
   button:hover, .btn:hover {
@@ -132,13 +131,20 @@ header nav ul li a {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
+  .title-bar {
+    width: 100%;
+  }
+
   .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 10vw 0 10vw;
+    border-bottom: 20px solid #8b8b8b;
+    background: #c0c0c0;
+    margin: 3vw 18vw 3vw 18vw;
+    border: 2px solid #fffdfc;
   }
   
   .container {
@@ -151,17 +157,12 @@ header nav ul li a {
     list-style-type: none
   }
   
-  h2 {
-    font-size: 36px;
-    color: #f3859b;
-    margin-bottom: 30px;
-  }
-  
   p {
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
     margin-bottom: 20px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
 
   .modal {
@@ -241,3 +242,16 @@ header nav ul li a {
   .fa {
     font-size: 20px;
   }
+
+@font-face {
+  font-family: 'HotRushSansItalic';
+  src: url('Hot\ Rush\ Sans\ Italic.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Bayshore';
+  src: url('Bayshore.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Chicago';
+  src: url('chicago.woff2')  format('woff2');
+}
