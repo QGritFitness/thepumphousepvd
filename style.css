@@ -22,7 +22,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://github.com/QGritFitness/thepumproompvd/blob/505b866ac5b1b1da8c50fa5a5e0086b5683a85c0/glitch.jpg");
+  background-image: url(glitch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
