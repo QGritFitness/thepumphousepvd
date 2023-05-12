@@ -82,6 +82,7 @@ header nav ul li a {
 
   video {
     width: 110%;
+     z-index: -999;
   }
   
   .hero-content {
@@ -97,6 +98,7 @@ header nav ul li a {
     width: 60vmax;
     max-width: 70vw;
     max-height: 60vmin;
+     z-index: 999;
   }
 
   #big-logo{
@@ -195,6 +197,31 @@ header nav ul li a {
     padding-left: 15vw;
     padding-right: 15vw;
   }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 3rem;
+  }
+  .script {
+     font-size: 4rem;
+   }
+   
+   #owner {
+      flex-direction: column;
+   }
+   
+   h3 {
+      font-size: 7rem;
+   }
+   
+   #big-logo {
+      height: 45vmin;
+   }
+   
+   .hero .btn {
+      width: 50%
+   }
+}
 
   #owner {
     display:flex; 
