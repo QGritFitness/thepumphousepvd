@@ -3,13 +3,14 @@
 (11,18,52)
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("https://raw.githubusercontent.com/mburakerman/aestextic/master/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+   background-color: #2b1165;
+ background: linear-gradient(
+  180deg,
+  #2b1165 0%,
+  rgba(26, 58, 130, 1) 37%,
+  rgba(171, 36, 177, 1) 69%,
+  #f54171 100%
+ );
     background-image: linear-gradient(270deg, #e3a5ee, #ede6bc);
     font-size: 13px;
     text-decoration: none;
@@ -19,14 +20,12 @@ body {
 */
 
 body {
- background-color: #2b1165;
- background: linear-gradient(
-  180deg,
-  #2b1165 0%,
-  rgba(26, 58, 130, 1) 37%,
-  rgba(171, 36, 177, 1) 69%,
-  #f54171 100%
- );
+  margin: 0;
+  padding: 0;
+  background-image: url("glitch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .overlay {
@@ -45,14 +44,8 @@ main {
 }
 
 header, footer {
-    background-color: #8b8b8b;
+    background-color: #000;
     font-family: 'Chicago';
-    margin: 3vw 3vw 0 3vw;
-}
-
-header {    
-  border-radius: 1rem 1rem 0 0;
-  box-shadow: 0 -2px #fffdfc, 0 -4px #ccdbeb;
 }
 
 header img {
@@ -76,7 +69,6 @@ header nav ul li a {
     margin: 0 3vw 0 3vw;
     padding: 0 0 0 0;
     overflow: hidden;
-    border-radius: 0 0 1rem 1rem;
   }
 
 .hero-background {
@@ -118,7 +110,10 @@ header nav ul li a {
     color: #fff;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     letter-spacing: .2rem;
-    padding-top:10px;
+  }
+
+  #meet h3 {
+    padding-top:5vmax;
   }
 
   .script {
@@ -180,11 +175,9 @@ header nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 20px solid #8b8b8b;
-    background: #000;
-    margin: 3vw 18vw 3vw 18vw;
-    border: 2px solid #fffdfc;
-    max-width: 800px;
+    background: #161618;
+    margin: 0 3vw 0 3vw;
+    width: 95%;
   }
   
   .container {
@@ -199,8 +192,8 @@ header nav ul li a {
     color: #fff;
     margin-bottom: 20px;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
 
   #owner {
@@ -208,6 +201,9 @@ header nav ul li a {
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
+    margin: 0 3vw 0 3vw;
+    padding-bottom: 5vmax;
+    max-width: 1000px;
   }
 
   #owner img {
@@ -216,40 +212,15 @@ header nav ul li a {
     padding-left: 2vw;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 10vw 0px 10vw;
+  #memberships, #juice, #contact {
+    width: 94vw !important;
+    padding: 5vh 0 5vh 0;
   }
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+  #juice h3, #contact h3 {
+    padding-bottom: 2vh;
   }
   
-  .modal-content {
-    margin: 15% auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    background-color: #fefefe;
-    border-radius: 5px;
-  }
-  
-  .close-btn {
-    float: right;
-    font-size: 1rem;
-  }
-
   footer {
     background-color: #000;
     color: #fff;
@@ -288,10 +259,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
-  }
-  
-  .fa {
-    font-size: 20px;
   }
 
 @font-face {
