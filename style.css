@@ -273,27 +273,11 @@ header nav ul li a {
     margin-right: 10px;
   }
 
-@media (max-width: 768px) {
-  p {
-    font-size: 3rem;
-  }
-  .script {
-     font-size: 4rem;
-   }
-   
-   #owner {
-      flex-direction: column;
-   }
-   
-   h3 {
-      font-size: 7rem;
-   }
-   
-   #big-logo {
-      height: 45vmin;
-   }
-   
-   .hero .btn {
-      width: 50%
-   }
+@media only screen (max-width: 768px) {
+   p { font-size: 3rem; }
+   .script { font-size: 4rem; }
+   #owner { flex-direction: column; }
+   h3 { font-size: 7rem; }
+   #big-logo { height: 45vmin; }
+   .hero .btn { width: 50% }
 }
