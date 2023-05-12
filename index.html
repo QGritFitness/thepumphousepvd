@@ -3,19 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Pump Room PVD</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link  rel="stylesheet"  href="https://unpkg.com/98.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
 </head>
 <body>
-	<header>
-		<img src="Logo.svg" alt="Logo">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Classes</a></li>
-				<li><a href="#">Juice Bar</a></li>
-				<li><a href="#">Contact</a></li>
+	<header class="navbar-fixed-top">	
+		<nav class="navbar">
+			<img class="navbar-brand" src="logoStripped.svg" alt="Logo">
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="#juice">Juice Bar</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.indiegogo.com/project/preview/2e3a306e" target="_blank">Join Now</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,61 +27,78 @@
 				  </video>
 			</div>
 			<div class="hero-content">
-				<h1>Sweat with Pride</h1>
-				<p>Join us for an inclusive and empowering workout that celebrates the LGBTQ+ community! Our expert trainers and state-of-the-art facilities will help you achieve your fitness goals and become the best version of yourself.</p>
-				<a href="#" class="btn btn-primary">Join Now</a>
+				<img id="big-logo" src="Logo.svg" alt="Logo">
+				<a href="https://www.indiegogo.com/project/preview/2e3a306e" class="btn btn-primary" target="_blank">Join Now</a>
 			</div>
 		</section>
 		
-		
-		<section class="about-section">
-				<h2>About Us</h2>
-				<p>Welcome to The Pump Room, the most fabulous gym in town! We're the ultimate queer gym and juice bar. Our mission is to create a safe and welcoming space for the LGBTQ+ community to get fit and healthy. Our trainers are passionate about fitness and they'll help you achieve your goals. Come and join us today!</p>
-				
-				<h3>Our Mission</h3>
-				<p>Our mission is to empower individuals within the LGBTQ+ community to take control of their health and wellness through fitness and movement.</p>
-				
-				<h3>Our Vision</h3>
-				<p>We envision a world where queer and trans folks feel confident and proud in their bodies, and where they can access the resources they need to maintain their physical and mental health.</p>
-				
-				<h3>Our Values</h3>
-				<ul>
-				  <li>Empowerment</li>
-				  <li>Inclusivity</li>
-				  <li>Joy</li>
-				  <li>Respect</li>
-				  <li>Community</li>
-				</ul>
-			  </section>
-		
-		<section class="juice-bar">
-			<h2>Juice Bar</h2>
-			<p>After your workout, grab a healthy and delicious smoothie from our juice bar. All of our smoothies are made with fresh, natural ingredients and are designed to help you refuel and recharge.</p>
-			<button class="open-btn">Open Menu</button>
+		<section class="section" id="about-us">
+					<p class="script" style="padding-top:20px;">Your neighborhood gym just got a little gayer...</p>
+					<br>
+					<p>The Pump Room is Providence, RI’s first trans and queer-owned gym and juice bar concept that centers and celebrates every body that has historically been left out of the fitness narrative. 
+						<br><br>
+						Our space is a true judgement-free zone, where anyone of any identity, gender, size, and ability can move freely and confidently with other members of their community, and most importantly have FUN. With ethereal neon vibes evocative of 80’s malls, Miami Vice, and 80’s synth music, it’s always a party here. 
+						<br><br>
+						Come check us out when we’re up and running - your first visit is on us!
+						<br><br>
+						** We are currently in the fundraising stage and would appreciate your support!! Please visit our indiegogo page <a href="https://www.indiegogo.com/project/preview/2e3a306e#/">here</a> to help fund this project and bring it to life! 
+						<br><br>
+						** Pre-sale memberships are also available with early bird pricing!! Memberships will be limited to the first 150 people, so make sure you secure your spot ASAP!</p>
+						<br><br>
 		</section>
+
+		<img src="wavy.svg" alt="" style="width:95%">
+
+		<section class="section" id="meet">
+			<h3 class="neonText">Meet your Trainer</h3>
+			<div id="owner">
+				<img src="mar.jpeg" alt="">
+				<p style="font-size: 1rem; padding: 2vw;"><span class="script">Mar Keller (he/him) </span><br>is a queer transgender man, NASM Certified Personal Trainer & Corrective Exercise Specialist, and a geek for all things 80s. He started Q GRIT Fitness, a personal training service for the LGBTQ+ community, in Brooklyn, NY in 2019 and is thrilled to be bringing the party up to Providence, RI! Mar has been featured as an instructor on fitness platforms such as Brrrn At Home and in various forms of media spotlighting transgender fitness instructors - most notably, Men’s Health Magazine (Pride issue 2023). As a former pastry chef, bartender, sommelier, and restaurant manager, The Pump Room Gym & Juice Bar is the lovechild of all of Mar’s interests and talents; He can’t wait to share this experience with you! Feel free to check out Q GRIT Fitness’s website here (hyperlink) to get to know him a bit better!</p>
+			</div>
+		</section>
+
+		<img src="wavy.svg" alt="" style="width:95%">
+
+		<section class="section" id="memberships">
+			<img src="memb.png" alt="">
+		</section>
+
+		<img src="wavy.svg" alt="" style="width:95%">
 		
-		<section class="contact">
-			<h2>Contact Us</h2>
+		<section class="section" id="juice">
+			<h3 class="neonText">Juice Bar</h2>
+			<p>The Juice Bar at The Pump Room is a one-of-a-kind juice bar/cafe by day and alcohol-free bar and social space by night. All juices are pressed fresh in house whenever possible using the highest quality ingredients, and each beverage is created with a culinary approach that elevates your flavor experience. Visit the juice bar to cool off after a workout, hit your macros with a smoothie, get work done, meet up with friends, or go on a sober date!
+				<br><br>
+				<span class="script">Check out our sample menu below!</span>
+				<br><br>
+				<img src="menu_2.png" alt="">
+			</p>		
+		</section>
+
+		<img src="wavy.svg" alt="" style="width:95%">
+		
+		<section class="section" id="contact">
+			<h3 class="neonText">Contact Us</h3>
+			<p class="script">Email Us at <a style="color: white; text-decoration: none;" href="mailto:info@thepumproompvd.com">info@thepumproompvd.com</a> </p>
         </section>
-
-		<div class="modal">
-			<div class="modal-content">
-			  <a href="#" class="close-btn">&times;</a>
-			  <ul class="menu">
-				<li>juice 1</li>
-				<li>juice 2</li>
-				<li>juice 3</li>
-				<li>juice 4</li>
-				<li>juice 5</li>
-			  </ul>
-			</div>
-		  </div>
-
     </main>
+
+	<footer>
+		<div class="wrapper">
+		  <nav>
+			<ul>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Contact</a></li>
+			  <li><a href="#">Privacy Policy</a></li>
+			</ul>
+		  </nav>
+		  
+		  <div class="social-links">
+			<a href="https://www.instagram.com/qgritfitness/">
+				<img src="ig.svg" alt="instagram logo" style="fill: #fff">	
+			</a>
+		  </div>
+	  </footer>
 </body>
-
-
-
-
-
+</html>
 
