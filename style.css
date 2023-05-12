@@ -19,6 +19,16 @@ body {
     -webkit-text-fill-color: transparent;
 */
 
+@font-face {
+  font-family: 'HotRushSansItalic';
+  src: url('Hot\ Rush\ Sans\ Italic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Chicago';
+  src: url('chicago.woff2')  format('woff2');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -198,31 +208,6 @@ header nav ul li a {
     padding-right: 15vw;
   }
 
-@media (max-width: 768px) {
-  p {
-    font-size: 3rem;
-  }
-  .script {
-     font-size: 4rem;
-   }
-   
-   #owner {
-      flex-direction: column;
-   }
-   
-   h3 {
-      font-size: 7rem;
-   }
-   
-   #big-logo {
-      height: 45vmin;
-   }
-   
-   .hero .btn {
-      width: 50%
-   }
-}
-
   #owner {
     display:flex; 
     flex-direction: row; 
@@ -288,12 +273,27 @@ header nav ul li a {
     margin-right: 10px;
   }
 
-@font-face {
-  font-family: 'HotRushSansItalic';
-  src: url('Hot\ Rush\ Sans\ Italic.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Chicago';
-  src: url('chicago.woff2')  format('woff2');
+@media (max-width: 768px) {
+  p {
+    font-size: 3rem;
+  }
+  .script {
+     font-size: 4rem;
+   }
+   
+   #owner {
+      flex-direction: column;
+   }
+   
+   h3 {
+      font-size: 7rem;
+   }
+   
+   #big-logo {
+      height: 45vmin;
+   }
+   
+   .hero .btn {
+      width: 50%
+   }
 }
