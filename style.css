@@ -82,7 +82,7 @@ header nav ul li a {
   }
 
 .hero-background {
-    width: 110%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@ header nav ul li a {
   }
 
   video {
-    width: 110%;
+    width: 100%;
      z-index: -999;
   }
   
